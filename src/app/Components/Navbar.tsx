@@ -2,12 +2,28 @@
 import { List, X } from 'lucide-react';
 import {useState } from 'react';
 import Link from 'next/link';
+import { gsap } from 'gsap';
+import ScrollToPlugin from 'gsap/dist/ScrollToPlugin';
+
+gsap.registerPlugin(ScrollToPlugin);
 
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
   
-
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: element,
+      });
+      // Close modal after navigation on mobile
+      if (window.innerWidth < 768) {
+        closeModal();
+      }
+    }
+  };
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -28,39 +44,49 @@ const Header = () => {
   const NavLinks = ({modal}: {modal: boolean}) => (
     <>
       <li>
-        <Link href="/" onClick={closeModal}
+        <button onClick={()=>{
+          scrollToSection("home")
+        }}
           className={`${modal ? "text-white" : "text-gray-100"} hover:text-white transform hover:scale-110 transition-transform duration-300`}
         >
           Home
-        </Link>
+        </button>
       </li>
       <li>
-        <Link href="/user" onClick={closeModal}
+        <button onClick={()=>{
+          scrollToSection("about")
+        }}
         className={`${modal ? "text-white" : "text-gray-100"} hover:text-white transform hover:scale-110 transition-transform duration-300`}
         >
           About
-        </Link>
+        </button>
       </li>
       <li>
-        <Link href="/" onClick={closeModal}
+        <button onClick={()=>{
+          scrollToSection("certificates")
+        }}
          className={`${modal ? "text-white" : "text-gray-100"} hover:text-white transform hover:scale-110 transition-transform duration-300`}
         >
-          Skills
-        </Link>
+          Certificates
+        </button>
       </li>
       <li>
-        <Link href="/" onClick={closeModal}
+        <button onClick={()=>{
+          scrollToSection("projects")
+        }}
          className={`${modal ? "text-white" : "text-gray-100"} hover:text-white transform hover:scale-110 transition-transform duration-300`}
         >
           Projects
-        </Link>
+        </button>
       </li>
       <li>
-        <Link href="/" onClick={closeModal}
+        <button  onClick={()=>{
+          scrollToSection("contact")
+        }}
          className={`${modal ? "text-white" : "text-gray-100"} hover:text-white transform hover:scale-110 transition-transform duration-300`}
         >
           Contact
-        </Link>
+        </button>
       </li>
     </>
   );

@@ -46,7 +46,7 @@ const Home = () => {
       }
       SocialLinks.displayName = "SocialLinks";
   return (
-    <main className="min-h-[calc(100vh-4rem)] ">
+    <main id='home' className="min-h-[calc(100vh-4rem)] ">
       <div className="intro flex flex-col md:flex-row items-center justify-between w-full px-6 md:px-16 lg:px-44 pt-10 md:pt-32 gap-8">
         <div className="w-full md:w-1/2 order-2 md:order-1">
           <div className="space-y-6 text-white">

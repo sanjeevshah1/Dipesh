@@ -4,31 +4,12 @@ import { Shield, User, Target, Flame } from 'lucide-react';
 
 const AboutMe = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const observerRef = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect(); // Stop observing after it's visible
-        }
-      },
-      { threshold: 0.05 } // Trigger when 5% of the component is visible
-    );
-
-    if (observerRef.current) {
-      observer.observe(observerRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
   useEffect(() => {
     setIsVisible(true);
-  }, []);
+  });
 
   return (
-
         <div id='about'
         className={`max-w-7xl mx-auto bg-slate-800/50 rounded-lg border border-slate-700 shadow-xl backdrop-blur-sm 
           transform transition-all duration-1000 ease-out

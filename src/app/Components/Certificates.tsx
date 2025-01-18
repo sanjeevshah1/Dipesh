@@ -107,7 +107,7 @@ const Certificates = () => {
   };
 
   return (
-    <div className="min-h-screen md:w-[90%] mt-2 bg-slate-800/50 rounded-lg border border-slate-700 shadow-xl backdrop-blur-sm mx-auto  px-4 py-8 md:py-16">
+    <div id='certificates' className="min-h-screen md:w-[90%] mt-2 bg-slate-800/50 rounded-lg border border-slate-700 shadow-xl backdrop-blur-sm mx-auto  px-4 py-8 md:py-16">
       <div className="max-w-7xl mx-auto">
         {/* <h1 className="text-4xl md:text-5xl text-white font-bold font-josefinSlab mb-12 md:mb-16 text-center md:text-left">
           My Certificates
