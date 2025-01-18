@@ -1,7 +1,6 @@
 'use client';
 import { List, X } from 'lucide-react';
 import {useState } from 'react';
-import Link from 'next/link';
 import { gsap } from 'gsap';
 import ScrollToPlugin from 'gsap/dist/ScrollToPlugin';
 

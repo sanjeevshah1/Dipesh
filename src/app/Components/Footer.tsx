@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
       <footer className="text-sm p-5">
-          <p>© 2024 My Portfolio</p>
+          <p>© {new Date().getFullYear()} My Portfolio</p>
         </footer>
     )
   }
