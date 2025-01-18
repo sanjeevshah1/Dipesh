@@ -14,7 +14,7 @@ const Home = () => {
           className: "text-3xl md:text-4xl text-white/90 mr-1",
         },
         {
-          text: "a",
+          text: "an",
           className: "text-3xl md:text-4xl text-white/90 mr-1",
         },
         {
