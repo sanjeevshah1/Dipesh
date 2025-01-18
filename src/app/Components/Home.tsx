@@ -51,7 +51,7 @@ const Home = () => {
         <div className="w-full md:w-1/2 order-2 md:order-1">
           <div className="space-y-6 text-white">
             <div className="space-y-3">
-              <p className="text-3xl md:text-4xl text-white/90">Hello, It's me</p>
+              <p className="text-3xl md:text-4xl text-white/90">Hello, It&apos;s me</p>
               <p className="text-5xl md:text-6xl font-josefinSlab text-purple-200">Dipesh Karki</p>
               <TypewriterEffectSmooth words={words} />
             </div>

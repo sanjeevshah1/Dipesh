@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { X, CheckCircle, ArrowRight, Shield, File, FileText, Award } from 'lucide-react';
+import { X, CheckCircle, ArrowRight, Award } from 'lucide-react';
 import Image from 'next/image';
 
 const Certificates = () => {

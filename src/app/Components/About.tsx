@@ -29,7 +29,7 @@ const AboutMe = () => {
 
   return (
 
-            <div id='about'
+        <div id='about'
         className={`max-w-7xl mx-auto bg-slate-800/50 rounded-lg border border-slate-700 shadow-xl backdrop-blur-sm 
           transform transition-all duration-1000 ease-out
           ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
@@ -63,7 +63,7 @@ const AboutMe = () => {
                   <h2 className="text-2xl font-semibold text-slate-200">About Me</h2>
                 </div>
                 <p className="text-lg leading-relaxed text-slate-300 flex-grow">
-                  My name is Dipesh Karki, and I am an aspiring cybersecurity professional committed to protecting digital environments. I possess a strong foundation in threat detection, incident response, and vulnerability management, supported by certifications like SC-200. I am dedicated to understanding and mitigating complex security challenges in today's evolving digital landscape.
+                  My name is Dipesh Karki, and I am an aspiring cybersecurity professional committed to protecting digital environments. I possess a strong foundation in threat detection, incident response, and vulnerability management, supported by certifications like SC-200. I am dedicated to understanding and mitigating complex security challenges in today&apos;s evolving digital landscape.
                 </p>
               </div>
             </div>
@@ -112,7 +112,7 @@ const AboutMe = () => {
               </div>
               <div className="relative bg-slate-800 rounded-lg p-8 border border-slate-700/50 hover:border-cyan-500/30 transition-all duration-300">
                 <p className="text-center text-slate-400 italic text-xl">
-                  "Securing the digital frontier, one vulnerability at a time."
+                &ldquo;Securing the digital frontier, one vulnerability at a time.&ldquo;
                 </p>
               </div>
             </div>

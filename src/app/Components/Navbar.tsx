@@ -1,6 +1,6 @@
 'use client';
 import { List, X } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import {useState } from 'react';
 import Link from 'next/link';
 
 const Header = () => {
