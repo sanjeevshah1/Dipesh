@@ -29,13 +29,13 @@ const Home = () => {
             <a href="https://www.facebook.com/profile.php?id=100017944472776" target="_blank" rel="noopener noreferrer" className="p-3 border border-purple-600 rounded-full">
               <FacebookIcon className="w-4 h-4 md:w-6 md:h-6 text-blue-500 hover:scale-[1.2] transition-transform ease-in-out duration-100" />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 border border-purple-600 rounded-full">
+            <a href="https://github.com/ShadowOG42" target="_blank" rel="noopener noreferrer" className="p-3 border border-purple-600 rounded-full">
             <GithubIcon className="w-4 h-4 md:w-6 md:h-6 text-gray-400 hover:scale-[1.2] transition-transform ease-in-out duration-100" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 border border-purple-600 rounded-full">
+            <a href="https://www.linkedin.com/in/dipesh-karki-2145a3227/" target="_blank" rel="noopener noreferrer" className="p-3 border border-purple-600 rounded-full">
               <LinkedinIcon className="w-4 h-4 md:w-6 md:h-6 text-blue-600 hover:scale-[1.2] transition-transform ease-in-out duration-100" />
             </a>
-            <a href="https://www.instagram.com/sanjeev_shah__/" target="_blank" rel="noopener noreferrer" className="p-3 border border-purple-600 rounded-full">
+            <a href="https://www.instagram.com/dipkarki9/" target="_blank" rel="noopener noreferrer" className="p-3 border border-purple-600 rounded-full">
               <InstagramIcon className="w-4 h-4 md:w-6 md:h-6 text-pink-400 hover:scale-[1.2] transition-transform duration-50" />
             </a>
             <button className="ml-auto px-4 p-2 md:px-6 md:p-3 border md:relative md:right-24 text-sm md:text-base text-white/80 hover:text-white/90 border-purple-600 bg-purple-600/70 rounded-full">

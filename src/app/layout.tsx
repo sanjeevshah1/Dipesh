@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Dipesh Karki",
   description: "My Portfolio",
   icons: {
-    icon: "/globe.svg",
+    icon: "/hackerCut.png",
   },
 };
 
